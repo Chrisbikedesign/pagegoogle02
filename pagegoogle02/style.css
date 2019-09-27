@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    height: 100%;  /*toute la hauteur de ma page*/
+    margin: 0px;
+}
+.rond {  /*pour le rond de lidentification*/
+    border-radius: 50%;
+    content: url(photo.png);  /*genere le contenu de l'element rond, il met le visuel en fond*/
+    width: 32px;
+}
+.grid {
+    opacity: 0.7;
+}
+.grid:hover { /*survol de ma grille dans le header*/
+    opacity: 1;
+}
+.logo {
+    padding-top: 110px;
+}
+.elementsectionsearch { /*pour formater la div seach*/
+    width: 584px;
+    height: 44px;
+    margin-top: 20px; /*pour l'espacer du logo de dessus*/
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /*pour espacer la loupe et la search*/
+    align-items: center;
+}
+.elementsectionsearch:hover { /*pour le survol de la div seach*/
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3); 
+}
+#maRecherche { /*pour dimensionner ma barre de rechercher et cacher les bords*/
+    border:transparent;
+    height: 32px;
+    width: 520px;
+}
+#conteneurheader  { /*je fait une premiere ligne qui contient ma navig du header*/
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    min-width: 181px;
+    margin-top: 16px;
+    margin-right: 30px;
+    text-align: right;
+    align-items: center;
+     }
+.elementheader { /*espace entre les elements de ma navig*/
+    padding-right: 15px;
+}
+.elementheader a {
+    text-decoration: none;
+    color: black;
+}
+.elementheader a:hover {
+    border-bottom: 1px solid;
+}
+#conteneursection  {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    }
+.elementsectionbouton {
+    padding-top: 20px;
+}
+.btgoogle { /* mise en forme de mes 2 boutons sous la search*/
+    height: 36px;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    font-size: 14px;
+    color: #5F6368;
+    margin: 11px 4px 11px 4px;
+    padding: 0px 16px 0px 16px;
+}
+.btgoogle:hover {
+    border: 1px solid #dfe1e5;
+    color:black;
+    box-shadow: 0px 0px 2px 0;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#F2F2F2; 
+    color: #5F5F5F; /*couleur de la typo du footer*/
+  }
+.pays {
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    padding-left: 30px;
+    text-align: left;
+    line-height: 40px;
+    font-size: 15px;
+}
+#conteneurfooter { /*conteneur pour la navig en 2 parties du footer*/
+    line-height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /*pour mettre les navig de chaque coté*/
+    align-items: center;
+}
+.elementfooter { /*reglage pour ma navig a gauche*/
+    padding-left: 30px;
+    text-align: left;
+}
+.elementfooterright { /*reglage pour ma navig a droite*/
+    padding-right: 30px;
+    text-align: right;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+li {
+    font-size: small;
+    line-height: 40px;
+    display: inline; /*pour mettre ma liste en ligne. Visiblement on doit faire toute les nav d'une page en liste*/
+}
+  
+.elementfooterright li { /*espacement pour la navig de gauche*/
+    padding-left: 27px;
+  }
+.elementfooter li { /*espacement pour la navig de doite*/
+    padding-right: 27px;
+  }
+ 
